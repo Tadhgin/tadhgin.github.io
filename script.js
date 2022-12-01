@@ -24,15 +24,15 @@ alpha2 = alpha.map(toUpper);
 
 var generateBtn = document.querySelector("#generate");
 
-get.addEventListener("click", function () {
+document.getElementById("generate").addEventListener("click", function () {
   newps = generatePassword();
   document.getElementById("password").placeholder = newps;
 });
 
 // Function write password
-function writePassword() {
+function generatePassword() {
    // Get user input
-   enter = parseInt(prompt("Password must be between 8 to 128 characters"));
+   enter = parseInt(prompt("Choose password length between 8 to 128 characters"));
   
    if (!enter) {
        alert("Must enter value");
@@ -43,10 +43,10 @@ function writePassword() {
 
    } else {
        //User input validated 1 to 4
-       confirmNumber = confirm("password may contain numbers");
-       confirmCharacter = confirm("password may contain special characters");
-       confirmUppercase = confirm("password may contain ppercase letters");
-       confirmLowercase = confirm("password may contain lowercase letters");
+       confirmNumber = confirm("Contains numbers");
+       confirmCharacter = confirm("Contains special characters");
+       confirmUppercase = confirm("Contains uppercase letters");
+       confirmLowercase = confirm("Contains lowercase letters");
    };
 
    // Else if 4 negative options
@@ -126,8 +126,3 @@ function UserInput(newps) {
    document.getElementById("password").textContent = newps;
 
 }
-
-var copy = document.querySelector("#copy");
-copy.addEventListener("click", function () {
-   copyPassword();
-});

@@ -30,4 +30,4 @@ The following image shows the web application's appearance and functionality:
 ![image](https://user-images.githubusercontent.com/117637052/205029745-54f823bb-7461-4929-a300-e3a7a5d99b87.png)
 
 
-You can launch the generator through this link:
+You can launch the generator through this link: https://tadhgin.github.io./
